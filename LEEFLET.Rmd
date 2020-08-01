@@ -1,0 +1,30 @@
+---
+title: "R Markdown and Leaflet"
+author: "Ravi S.Gonella"
+date: "8/1/2020"
+output: html_document
+---
+
+# Scope of the assignment
+
+Create a web page using R Markdown that features a map created with Leaflet.
+
+Host your webpage on either GitHub Pages, RPubs, or NeoCities.
+
+Your webpage must contain the date that you created the document, and it must contain a map created with Leaflet. We would love to see you show off your creativity!
+
+
+```{r}
+
+library(leaflet)
+
+my_map <- leaflet() %>%
+  addTiles() %>%  
+  addMarkers(lng=81.788261, lat=17.010181)
+my_map 
+
+```
+
+
+
+
